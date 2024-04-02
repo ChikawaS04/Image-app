@@ -1,0 +1,83 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<style>
+    a {
+        text-decoration: none;
+    }
+
+    .display-4,
+    .section-title,
+    .card-body h3,
+    .card-body p {
+        color: #c9c0bb; /* Off-white text color */
+    }
+
+</style>
+<div class="text-center">
+    <h1 class="display-4">Welcome back NBD's User</h1>
+    <p>Visit our Website <a href="https://naturalbydesign.com">www.naturalbydesign.com</a>.</p>
+    <section class="section">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-12 text-center">
+                    <h2 class="section-title">Choose an option to start!</h2>
+                </div> 
+                <!-- Client Section --> 
+                <div class="col-lg-4 col-sm-6 mb-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <a asp-area="" asp-controller="Clients" asp-action="Index">
+                                <i class="ti-panel icon text-primary d-block mb-4"></i>
+                                <h3 class="mb-3 mt-0">Client Section</h3>
+                                <p class="mb-0">Manage your clients and their data efficiently.</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Projects and Maintenance -->
+                <div class="col-lg-4 col-sm-6 mb-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <a asp-area="" asp-controller="Projects" asp-action="Index">
+                                <i class="ti-credit-card icon text-primary d-block mb-4"></i>
+                                <h3 class="mb-3 mt-0">Projects and Maintenance</h3>
+                                <p class="mb-0">Track your ongoing projects and schedule maintenance tasks easily.</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Bids -->
+                <div class="col-lg-4 col-sm-6 mb-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <a asp-area="" asp-controller="Bid" asp-action="Index">
+                                <i class="ti-package icon text-primary d-block mb-4"></i>
+                                <h3 class="mb-3 mt-0">Bids</h3>
+                                <p class="mb-0">Submit and manage bids for new projects effortlessly.</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-12 card">
+                    <div class=" card-body  ">
+                        <h2 class="mb-4">About Natural by Design Application</h2>
+                        <p class="mb-4">
+                            Natural by Design Application is a user-friendly software solution for landscaping professionals. It helps manage clients, projects, maintenance, and bids efficiently in one place.
+                        </p>
+                        <a asp-area="" asp-controller="Contact" asp-action="Index" class="btn btn-primary">Contact Us</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+<script src="~/js/script.js"></script>
